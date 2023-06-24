@@ -1,0 +1,70 @@
+body{
+	background: #35A9DB;
+	font-family: roboto;
+	text-align: center;
+	background-image: url("bg1.jfif");
+}
+h1{
+	color: #003EFF;
+}
+.ketengah{
+	margin: 10px auto;
+	width: 1150px;
+}
+.kotak{
+	background: #fcfcfc;
+	text-align: right;
+	padding: 20px;
+	width: 200px;
+	float: left;
+	margin: 20px;
+	height: 200px;
+}
+.kotak1{
+	border-radius: 10px 10px 10px 10px;
+	background-image: url("ktk1.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak2{
+	border-radius: 40px 20px 60px 90px;
+	background-image: url("ktk2.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak3{
+	border-radius: 20px 10px 80px 10px;
+	background-image: url("ktk3.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak4{
+	border-radius: 0px 50px 0px 50px;
+	background-image: url("ktk4.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak5{
+	border-radius: 0px 0px 0px 0px;
+	background-image: url("ktk5.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak6{
+	border-radius: 100%;
+	background-image: url("ktk6.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak7{
+	border-radius: 40px 10px;
+	background-image: url("ktk7.jfif");
+	background-position: center;
+	background-size: cover; 
+}
+.kotak8{
+	border-radius: 10px 10px 50% 50%;
+	background-image: url("ktk8.jfif");
+	background-position: center;
+	background-size: cover; 
+}

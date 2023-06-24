@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Perulangan while</title>
+</head>
+<body>
+    <script>//Perulangan akan terjadi selama variabel ulangi brenilai true
+        var ulangi = confirm("Apakah anda mau mengulang?");//fungsi confirm() untuk menampilkan dialog konfirmasi,
+        var counter = 0;
+        while(ulangi){
+            counter++;
+            ulangi = confirm("Apakah anda mau mengulang?");
+        }//OK = True || Cancel =  False
+        document.write("Perulangan sudah dilakuakn sebanyak "+ counter +" kali");
+    </script>
+</body>
+</html>

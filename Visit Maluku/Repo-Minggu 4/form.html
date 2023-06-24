@@ -1,0 +1,217 @@
+<DOCTYPE html>
+<html>
+<head>
+	<title> Formulir Pendaftaran </title>
+</head>
+<body>
+<style>
+	.wrap{
+		width: 800px;
+		margin: 10px auto;
+		padding: 1px;
+		}
+	body{
+			background-image: url(RK1.jpg);
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;	
+		}
+</style>
+<div class="wrap">
+	<img src="BNN.jpg" width="800px">
+	<h1 style="background-color : transparent" align="center"> FORMULIR PPDB JALUR ZONASI TAHUN 2020 </h>
+</div>
+	
+<div class="wrap" style="background-color: white">
+	<form action="proses.php" method="post" name="fcontoh">
+		<table>
+			<h3 style="background-color : orange" align="center"> INFO PENDAFTARAN </h3>
+			<tr>
+				<td> NISN </td>
+				<td><input type="text" id="nNISN" name="nNISN" required=""></td>
+			</tr>
+			<tr>
+				<td> Asal Sekolah </td>
+				<td><input type="text" id="nAsal_Sekolah" name="nAsal_Sekolah" required=""></td>
+			</tr>
+			<tr>
+				<td> Tahun Lulus </td>
+				<td><input type="text" id="nTahun_Lulus" name="nTahun_Lulus" required=""></td>
+			</tr>
+		</table>
+		<table>
+			<h3 style="background-color : orange" align="center"> DATA CALON PESERTA </h3>
+			<tr>
+				<td> Nama Lengkap </td>
+				<td><input type="text" id="nNama_Lengkappeserta" name="nNama_Lengkappeserta" required></td>
+			</tr>
+			<tr>
+				<td> NIK </td>
+				<td><input type="text" id="nNIK" name="nNIK" required></td>
+			</tr>
+			<tr>
+				<td> Tempat/Tanggal Lahir </td>
+				<td><input type="text" id="nTTL" name="nTTL" required>
+				<td> Umur </td>
+				<td><input type="text" id="nUmur" name="nUmur" required>
+			</tr>
+			<tr>
+				<td> Jenis Kelamin </td>
+				<td><input type="radio" id="nJenis_Kelamin" name="nJenis_Kelamin" required>laki-laki
+					<input type="radio" id="nJenis_Kelamin" name="nJenis_Kelamin" required>Perempuan</td>
+			</tr>
+			<tr>
+				<td> Alamat </td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td> Desa/Kelurahan </td>
+				<td><input type="text" id="nDesa_peserta" name="nDesa_peserta" required></td>
+			</tr>
+			<tr>
+				<td> Kecamatan </td>
+				<td><input type="text" id="nKecamatan_peserta" name="nKecamatan_peserta" required></td>
+			</tr>
+			<tr>
+				<td> Kabupaten/Kota </td>
+				<td><input type="text" id="nKab_peserta" name="nKab_peserta" required></td>
+			</tr>
+			<tr>
+				<td> Provinsi</td>
+				<td><select id="nProvinsi_peserta" name="nProvinsi_peserta" required>
+					<option>Pilih Provinsi Anda</option>
+						<option value="11">ACEH</option>
+                        <option value="12">SUMATERA UTARA</option>
+                        <option value="13">SUMATERA BARAT</option>
+						<option value="16">SUMATERA SELATAN</option>
+                        <option value="14">RIAU</option>
+                        <option value="15">JAMBI</option>
+                        <option value="17">BENGKULU</option>
+                        <option value="18">LAMPUNG</option>
+                        <option value="19">KEPULAUAN BANGKA BELITUNG</option>
+                        <option value="21">KEPULAUAN RIAU</option>
+                        <option value="31">DKI JAKARTA</option>
+                        <option value="32">JAWA BARAT</option>
+                        <option value="33">JAWA TENGAH</option>
+						<option value="35">JAWA TIMUR</option>
+                        <option value="34">DI YOGYAKARTA</option>
+                        <option value="36">BANTEN</option>
+                        <option value="51">BALI</option>
+                        <option value="52">NUSA TENGGARA BARAT</option>
+                        <option value="53">NUSA TENGGARA TIMUR</option>
+                        <option value="61">KALIMANTAN BARAT</option>
+                        <option value="62">KALIMANTAN TENGAH</option>
+                        <option value="63">KALIMANTAN SELATAN</option>
+						<option value="65">KALIMANTAN UTARA</option>
+                        <option value="64">KALIMANTAN TIMUR</option>
+                        <option value="71">SULAWESI UTARA</option>
+                        <option value="73">SULAWESI SELATAN</option>
+                        <option value="74">SULAWESI TENGGARA</option>
+						<option value="76">SULAWESI BARAT</option>
+						<option value="72">SULAWESI TENGAH</option>
+                        <option value="75">GORONTALO</option>
+                        <option value="81">MALUKU</option>
+                        <option value="82">MALUKU UTARA</option>
+                        <option value="94">PAPUA</option>
+                        <option value="91">PAPUA BARAT</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td> Email Aktif </td>
+				<td><input type="Email" id="nEmail" name="nEmail" required></td>
+			</tr>
+		</table>
+		<table>
+			<h3 style="background-color : orange" align="center"> DATA ORANG TUA </h3>
+			<tr>
+				<td> Nomor Kartu Keluarga </td>
+				<td><input type="text" id="nKK" name="nKK" required></td>
+			</tr>
+			<tr>
+				<td> Nama Ayah Kandung </td>
+				<td><input type="text" id="nAyah" name="nAyah" required></td>
+			</tr>
+			<tr>
+				<td> Agama </td>
+				<td><select id="nAgama" name="nAgama" required>
+					<option></option>
+					<option>Islam</option>
+					<option>Kristen</option>
+					<option>Katholik</option>
+					<option>Budha</option>
+					<option>Hindu</option>
+					<option>KongHucu</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td> Pekerjaan </td>
+				<td><input type="text" id="nPekerjaan" name="nPekerjaan" required></td>
+			</tr>
+			<tr>
+				<td> Nama Ibu Kandung </td>
+				<td><input type="text" id="nIbu" name="nIbu" required></td>
+			</tr>
+			<tr>
+				<td> Alamat </td>
+				<td><textarea></textarea></td>
+			</tr>
+			<tr>
+				<td> Desa/Kelurahan </td>
+				<td><input type="text" id="nDesa_ortu" name="nDesa_ortu" required></td>
+			</tr>
+			<tr>
+				<td> Kecamatan </td>
+				<td><input type="text" id="nKecamatan_ortu" name="nKecamatan_ortu" required></td>
+			</tr>
+			<tr>
+				<td> Kabupaten/Kota </td>
+				<td><input type="text" id="nKab_ortu" name="nKab_ortu" required></td>
+			</tr>
+			<tr>
+				<td> Provinsi</td>
+				<td><select id="nProvinsi_Ortu" name="nProvinsi_Ortu" required>
+					<option>Pilih Provinsi Anda</option>
+						<option value="11">ACEH</option>
+                        <option value="12">SUMATERA UTARA</option>
+                        <option value="13">SUMATERA BARAT</option>
+						<option value="16">SUMATERA SELATAN</option>
+                        <option value="14">RIAU</option>
+                        <option value="15">JAMBI</option>
+                        <option value="17">BENGKULU</option>
+                        <option value="18">LAMPUNG</option>
+                        <option value="19">KEPULAUAN BANGKA BELITUNG</option>
+                        <option value="21">KEPULAUAN RIAU</option>
+                        <option value="31">DKI JAKARTA</option>
+                        <option value="32">JAWA BARAT</option>
+                        <option value="33">JAWA TENGAH</option>
+						<option value="35">JAWA TIMUR</option>
+                        <option value="34">DI YOGYAKARTA</option>
+                        <option value="36">BANTEN</option>
+                        <option value="51">BALI</option>
+                        <option value="52">NUSA TENGGARA BARAT</option>
+                        <option value="53">NUSA TENGGARA TIMUR</option>
+                        <option value="61">KALIMANTAN BARAT</option>
+                        <option value="62">KALIMANTAN TENGAH</option>
+                        <option value="63">KALIMANTAN SELATAN</option>
+						<option value="65">KALIMANTAN UTARA</option>
+                        <option value="64">KALIMANTAN TIMUR</option>
+                        <option value="71">SULAWESI UTARA</option>
+                        <option value="73">SULAWESI SELATAN</option>
+                        <option value="74">SULAWESI TENGGARA</option>
+						<option value="76">SULAWESI BARAT</option>
+						<option value="72">SULAWESI TENGAH</option>
+                        <option value="75">GORONTALO</option>
+                        <option value="81">MALUKU</option>
+                        <option value="82">MALUKU UTARA</option>
+                        <option value="94">PAPUA</option>
+                        <option value="91">PAPUA BARAT</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="right"> <button  type="submit" name="tombol">Submit</button> </td>
+				<td colspan="2" align="right"> <button type="reset" name="tombol">Reset</button> </td>
+			</tr>
+		</table>
+</div>
+</body>
+</html>

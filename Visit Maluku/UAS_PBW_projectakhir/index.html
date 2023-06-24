@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milk City Tour Agency</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Link Font style  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- file tampilan css sttyle  -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- header section, Batas Atas  -->
+<header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>MilkCity_</span>Tour agency</a>
+        <nav class="navbar">
+            <a href="#home">menu</a>
+            <a href="#book">buku tamu</a>
+            <a href="#packages">paket</a>
+            <a href="#services">pelayanan</a>
+            <a href="#gallery">galeri</a>
+            <a href="#review">review</a>
+            <a href="#contact">kontak</a>
+        </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+    </div>
+    <form action="" class="search-bar-container"><!-- Fitur Pencarian  -->
+        <input type="search" id="search-bar" placeholder="cari disini...">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+<!-- header section, Batas Bawah -->
+
+<!-- Fitur Login Akun & Daftar Akun  -->
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="masukan email...">
+        <input type="password" class="box" placeholder="masukan kata sandi...">
+        <input type="submit" value="masuk" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">selalu ingat saya</label>
+        <p>Lupa Sandi ? <a href="#">Tekan Disini</a></p>
+        <p>Belum Punya Akun ? <a href="#">Buat Sekarang </a></p>
+    </form>
+</div>
+
+<!-- Batas Atas Menu Home  -->
+<section class="home" id="home">
+    <div class="content">
+        <h3>BOYOLALI TERSENYUM</h3><!-- Judul front video  -->
+        <p>Ramah Orangnya, Melimpah Susu Sapinya</p>
+        <a href="https://id.wikipedia.org/wiki/Kabupaten_Boyolali" class="btn">More Info</a> <!-- tombol more info  -->
+    </div>
+    <div class="controls"><!-- 5 Video auto play  -->
+        <span class="vid-btn active" data-src="images/vid-1.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-2.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-3.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-4.mp4"></span>
+        <span class="vid-btn" data-src="images/vid-5.mp4"></span>
+    </div>
+    <div class="video-container">
+        <video src="images/vid-1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<!-- Batas bawah menu Home -->
+
+<!-- Batas Atas Buku Tamu  -->
+<section class="book" id="book">
+    <h1 class="heading"><!-- Judul Buku Tamu  -->
+        <span>o</span>
+        <span>r</span>
+        <span>d</span>
+        <span>e</span>
+        <span>r</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="images/book-img.png" alt=""><!-- Foto Buku Tamu  -->
+        </div>
+        <form action=""><!-- Form input Buku Tamu  -->
+            <div class="inputBox">
+                <h3>Mau kemana hari ini ?</h3>
+                <input type="text" placeholder="masukan tempat tujuan...">
+            </div>
+            <div class="inputBox">
+                <h3>Berapa jumlah temanmu ?</h3>
+                <input type="number" placeholder="jumlah peserta...">
+            </div>
+            <div class="inputBox">
+                <h3>Mulai dari ?</h3>
+                <input type="date">
+            </div>
+            <div class="inputBox">
+                <h3>berakhir pada ?</h3>
+                <input type="date">
+            </div>
+            <input type="submit" class="btn" value="Pesan Sekarang">
+        </form>
+    </div>
+</section>
+<!-- Batas bawah section buku tamu -->
+
+<!-- Batas section paket wisata atas  -->
+<section class="packages" id="packages">
+    <h1 class="heading"><!-- Judul Paket  -->
+        <span>p</span>
+        <span>a</span>
+        <span>c</span>
+        <span>k</span>
+        <span>a</span>
+        <span>g</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/p-1.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Candi Prambanan </h3>
+                    <p>Candhi Prambanan adalah kompleks candi Hindu terbesar di Indonesia 
+                        yang dibangun pada abad ke-9 M. Candi ini dipersembahkan untuk 
+                        Trimurti, tiga dewa utama Hindu yaitu dewa Brahma sebagai dewa pencipta,
+                        dewa Wisnu sebagai dewa pemelihara, dan dewa Siwa sebagai dewa pemusnah.
+                        Berdasarkan prasasti Siwagrha nama asli kompleks candi ini adalah Siwagrha 
+                        (bahasa Sanskerta yang bermakna 'Rumah Siwa').</p>
+                <div class="stars"> <!-- Rating penilaian bintang  -->
+                    <i class="fas fa-star"></i> <!-- fas (Bintang isi)  -->
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i> <!-- Far (Bintang kosong)  -->
+                </div>
+                <div class="price"> WNI IDR 48.000 <span>IDR 50.000</span> </div> <!-- Harga  -->
+                <div class="price"> WNA IDR 348.000 <span>IDR 362.500</span> </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-2.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Tebing Breksi, Klaten </h3>
+                    <p>Hits dan Kekinian, mungkin itulah yang bisa menggambarkan destinasi 
+                        wisata Taman Tebing Breksi di Yogyakarta ini. Area wisata yang terbilang 
+                        unik dan nyeni dengan menyuguhkan atraksi wisata yang berbeda dari 
+                        tempat lain.Area taman merupakan bekas kawasan pertambangan batu alam 
+                        yang terbentuk akibat aktivitas Gunung Api Purba Nglanggeran. Akhirnya
+                        setempat akhirnya mengelola bekas pertambangan tersebut menjadi destinasi 
+                        wisata bertema geowisata.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> IDR 55.000 <span> IDR 70.00</span> </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-3.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Candi Borobudur </h3>
+                    <p>Candhi Barabudhur) adalah sebuah candi Buddha yang terletak di 
+                        Borobudur, Magelang, Jawa Tengah, Indonesia.
+                        Candi dengan banyak stupa ini didirikan oleh para penganut 
+                        agama Buddha Mahayana sekitar tahun 800-an Masehi pada masa 
+                        pemerintahan wangsa Syailendra. Borobudur adalah candi atau 
+                        kuil Buddha terbesar di dunia,sekaligus salah satu monumen 
+                        Buddha terbesar di dunia.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> IDR 50.000 (dewasa) <span> IDR 80.000</span> </div>
+                <div class="price"> IDR 25.000 (anak-anak)) <span> IDR 55.000</span> </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-4.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Nepal Van Java, Magelang </h3>
+                    <p>Dusun itu mendapat julukan sebagai Nepal van Java karena memiliki pemandangan 
+                        berupa rumah penduduk yang seolah bertumpuk di lereng gunung, seperti Negara Nepal.
+                        Bedanya, Dusun Butuh berada di lereng Gunung Sumbing, sementara Negara Nepal memiliki Gunung Everest. 
+                        Pemandangan seperti itu pun segera dikenal masyarakat luas setelah tersebar luas di media sosial. Kini, 
+                        banyak orang datang ke Dusun Butuh karena penasaran dengan nuansa Nepal van Java.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> IDR 30.000 <span>IDR 45.000</span> </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-5.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> The Heritage Palace, Solo </h3>
+                    <p>The Heritage Palace merupakan destinasi wisata terbaru yang lagi hits saat ini. 
+                        Sama seperti De Tjolomadoe yang dulunya adalah pabrik gula, The Heritage Palace 
+                        juga dulunya adalah pabrik gula Gembongan, karena suasananya yang kental dengan 
+                        nuansa Eropa klasik tempo doeloe. Salah satu bangunan yang sangat menarik perhatian 
+                        adalah bangunan gaya romawi yang mewah nan megah.Mumpung masih baru dan masih hangat nih, 
+                        yuk kita intip sama-sama apa saja sih yang menarik dari destinasi wisata yang satu ini.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> IDR 60.000 <span>IDR 75.000</span> </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/p-6.jpg" alt="">
+            <div class="content">
+                <h3> <i class="fas fa-map-marker-alt"></i> Umbul Ponggok, Klaten </h3>
+                    <p>Umbul Ponggok menawarkan beberapa aktivitas kepada wisatawan, salah 
+                        satunya adalah berfoto dengan ikan dan beberapa properti menarik.
+                        Tempat wisata ini terbilang cukup berbeda dari kolam renang pada umumnya. 
+                        Airnya berasal langsung dari mata air. Dasar kolamnya pun memiliki pasir, 
+                        karang, hingga berbagai jenis ikan. Meski dipenuhi ikan, air di Umbul Ponggok 
+                        tidak amis karena airnya terus mengalir. Wisatawan yang masuk ke dalam kolam bisa menemui beberapa spot foto menarik.</p>
+                <div class="stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="price"> IDR 45.000 <span>IDR 75.000</span> </div>
+                <a href="#" class="btn">Pesan Sekarang</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Batas section paket bawah -->
+
+<!-- Batas section Layanan Service Atas  -->
+<section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span><!-- judul layanan service  -->
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <i class="fas fa-hotel"></i>
+                <h3>Penginapan</h3>
+                    <p>Menyediakan berbagai pilihan penginapan yang mempunyai banyak fasilitas yang dapat memanjakan rasa lelah setelah beraktivitas seharian</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-utensils"></i>
+                <h3>Resto & Cafe</h3>
+                    <p>Banyak rekomendasi tempat makan bersama keluarga atau hanya tempat sekedar untuk bersantai menikmati makanan khas dari Boyolali, mulai dari yang classic - modern</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-bullhorn"></i>
+                <h3>Layanan Informasi</h3>
+                    <p>Tak perlu bingung dalam mencari layanan informasi yang anda butuhkan, semua informasi yang anda butuhkan sudah kami siapkan dengan cukup mengakses layanan yang telah kami sajiakan di media sosial</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+                <h3>Sekitar Boyolali</h3>
+                    <p>boyolali dikelilingi banyak kota-kota besar seperti Solo, yogyakarta, salatiga yang dapat kalian kunjungi ketika anda ingin melakukan aktivitas di sekitar kota boyolali ini</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-plane"></i>
+                <h3>Transportasi</h3>
+                    <p>Ingin bepergian ? tak perlu bingung, banyak jasa transportasi yang dapat diakses, mulai dari ojek online, Bus, maupun transportasi udara</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+                <h3>Perjalanan Lokal</h3>
+                    <p>banyak tempat-tempat lokal menarik yang dapat anda kunjungi mulai dari destinasi wisata, kuliner, industri kerajinan, tempat olahraga, dan masih banyak lainnya, selain itu anda bisa mengunjunginya menggunakan jasa transportasi tradisional seperti dokar (kereta kuda)</p>
+        </div>
+    </div>
+</section>
+<!-- Batas layanan service bawah -->
+
+<!-- Batas foto galeri  -->
+<section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span> <!-- judul galeri  -->
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="images/g-1.jpg" alt=""> <!-- Foto   -->
+            <div class="content">
+                <h3>Waduk Cengklik</h3> <!-- judul foto  -->
+                    <p>memanjakan mata dalam menikmati senja yang datang sekejap namun memberikan kesan</p> <!-- deskripsi foto  -->
+                <a href="https://www.instagram.com/wadukcengklikpark/" class="btn">selebihnya</a> <!-- Tombol selebihnya  -->
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-2.jpg" alt="">
+            <div class="content">
+                <h3>Simpang Siaga Boyolali</h3>
+                    <p>Ajuna Wijaya salah satu iconic yang menjadi ciri khas boyolali</p>
+                <a href="https://jatengprov.go.id/beritadaerah/kemegahan-simpang-siaga-yang-tak-pernah-sepi-pengunjung/" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-3.jpeg" alt="">
+            <div class="content">
+                <h3>tari topeng ireng</h3>
+                    <p>hentakan kaki yang mencerminkan budaya pegununggan di boyolali & bunyi gemerincing tedengar berkepanjangan.</p>
+                <a href="https://www.merdeka.com/travel/tari-topeng-ireng-lereng-merapi-melanglang-buana-ke-eropa-hingga-rusia.html" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-4.jpg" alt="">
+            <div class="content">
+                <h3>Danau teratai jatisari</h3>
+                    <p>bersemi, memandang bunga lotus mekar dipagi hari</p>
+                <a href="https://jadwaltravel.com/danau-teratai-andong/" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-5.jpg" alt="">
+            <div class="content">
+                <h3>Gedung Lembu Sora</h3>
+                    <p>dikenal sebagai Kota Susu. Tak ayal, gedung ini merupkan iconik sapi terbesar di boyolali.</p>
+                <a href="http://dprd.boyolali.go.id/2018/03/15/sapi-ndekem-lembu-sora-menjadi-ikon-boyolali/" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-6.jpg" alt="">
+            <div class="content">
+                <h3>Kedung Dlingo</h3>
+                    <p>sungai cantik dengan panorama hijaunya terasiring persawahan yang masih alami</p>
+                <a href="https://www.instagram.com/p/CR_fgr1lulU/" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-7.jpg" alt="">
+            <div class="content">
+                <h3>Bukit Sanjaya</h3>
+                    <p>Menikmati nuansa seperti di bali, pemandangan diatas ketinggian dengan udara yang sejuk & panorama gunung yang indah</p>
+                <a href="https://travel.kompas.com/read/2020/08/26/121000527/bukit-sanjaya-selo-foto-di-replika-gapura-lempuyang-bali?page=all" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-8.jpg" alt="">
+            <div class="content">
+                <h3>Kebun Raya Indrokilo</h3>
+                    <p>memiliki tujuh ikon yang menjadi ciri khas obyek wisata ini.</p>
+                <a href="http://www.kebunrayaindrokilo.boyolali.go.id/" class="btn">selebihnya</a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="images/g-9.jpg" alt="">
+            <div class="content">
+                <h3>Alun-Alun Kidul Boyolali</h3>
+                    <p>Beragam aktivitas bisa dilakukan di sini. Mulai dari berloahraga, wisata kuliner (street food), piknik, serta beberapa wahana permainan anak-anak. Tidak ketinggalan tentu foto-foto di patung ikonik boyolali</p>
+                <a href="https://travelspromo.com/htm-wisata/alun-alun-kidul-boyolali/" class="btn">selebihnya</a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Batas bawah section Galeri -->
+
+<!-- Batas review section Atas  -->
+<section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span><!-- judul rivew  -->
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+    </h1>
+    <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic1.png" alt="">
+                    <h3>Elfa_ZG</h3> <!-- Nama Akun  -->
+                        <p>Kembangkan atraksi wisata di destinasi dengan catatan tetap mempertimbangkan daya dukung destinasi wisata</p> <!-- Komentar  -->
+                    <div class="stars"> <!-- Rivew Bintang  -->
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i><!-- Bintang Kosong  -->
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic2.jpg" alt="">
+                    <h3>zhanung_gtg</h3>
+                        <p>Sesuai dengan sub websitenya, memang benar-benar lengkap dan menarik informasinya, semogan selalu sukses min, Thankyou..</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic3.png" alt="">
+                    <h3>nandasyaa</h3>
+                        <p>hai, aku sudah beberapa kali ke Kota Boyolali, info ini sangat bermanfaat.... Jadi kangen kota Susu deh..wkwkwk #wisatadolanboyolali</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="images/pic4.png" alt="">
+                    <h3>Tamaputra_28</h3>
+                        <p>yuk kita ramaikan kembali wisata di Kota Boyolali,bangkit perekonomian kita, menuju boyolali pro investasi</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- batas review section bawah -->
+
+<!-- batas contact section atas  -->
+<section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span> <!-- Judul Kontak  -->
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+
+        <div class="image">
+            <img src="images/contact-img.png" alt=""> <!-- Foto Contact  -->
+        </div>
+        <form action="">
+            <div class="inputBox"> <!-- Input form kontak  -->
+                <input type="text" placeholder="nama..">
+                <input type="email" placeholder="e-mail...">
+            </div>
+            <div class="inputBox">
+                <input type="number" placeholder="nomor telepon (masukkan angka)">
+                <input type="text" placeholder="subjek...">
+            </div>
+            <textarea placeholder="pesan/kesan..." name="" id="" cols="30" rows="10"></textarea>
+            <input type="submit" class="btn" value="Kirim Pesan">
+        </form>
+    </div>
+</section>
+<!-- bats contact section akhir -->
+
+<!-- gambar sponsorship/brand section  -->
+<section class="brand-container">
+    <div class="swiper-container brand-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/7.jpg" alt=""></div>
+        </div>
+    </div>
+</section>
+
+<!-- halaman footer  -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>Tentang</h3> <!-- Tentang Website  -->
+                <p>MilkCity_TOURAGENCY, merupakan penyedia jasa layanan akses bagi masyarakat untuk menemukan dan memesan berbagai layanan transportasi, gaya hidup, serta  menawarkan reservasi untuk berbagai atraksi dan aktivitas lokal serta direktori kuliner yang berada dikawasan boyolali & sekitarnya</p>
+        </div>
+        <div class="box">
+            <h3>Info Area</h3> <!-- info lokasi/Map Area  -->
+            <a href="https://www.google.co.id/maps/place/Kabupaten+Boyolali,+Jawa+Tengah/@-7.3870042,110.3264414,10z/data=!3m1!4b1!4m5!3m4!1s0x2e7a73e2eb7ff211:0x3027a76e352bc80!8m2!3d-7.4317773!4d110.6883536?hl=id">Boyolali</a>
+            <a href="https://www.google.co.id/maps/place/Surakarta,+Kota+Surakarta,+Jawa+Tengah/@-7.5592076,110.7837924,13z/data=!3m1!4b1!4m5!3m4!1s0x2e7a16627ad11ab1:0xe7fe4e0454bc3095!8m2!3d-7.5754887!4d110.8243272?hl=id">Solo</a>
+            <a href="https://www.google.co.id/maps/place/Klaten,+Kabupaten+Klaten,+Jawa+Tengah/@-7.7170155,110.3742488,10z/data=!3m1!4b1!4m5!3m4!1s0x2e7a416389cafa5d:0x3027a76e352bad0!8m2!3d-7.739967!4d110.6645683?hl=id">Klaten</a>
+            <a href="https://www.google.co.id/maps/place/Yogyakarta,+Kota+Yogyakarta,+Daerah+Istimewa+Yogyakarta/@-7.8032447,110.3049759,12z/data=!3m1!4b1!4m5!3m4!1s0x2e7a5787bd5b6bc5:0x21723fd4d3684f71!8m2!3d-7.7955798!4d110.3694896?hl=id">Jogja</a>
+            <a href="https://www.google.co.id/maps/place/Magelang,+Kota+Magelang,+Jawa+Tengah/@-7.4730525,110.1825906,13z/data=!3m1!4b1!4m5!3m4!1s0x2e7a8f5d736ef381:0xa0645d8ec4966c24!8m2!3d-7.4797342!4d110.2176941?hl=id">Magelang</a>
+        </div>
+        <div class="box">
+            <h3>Menu</h3> <!-- Menu berhubungan dengan header  -->
+            <a href="#home">menu utama</a>
+            <a href="#book">buku tamu</a>
+            <a href="#packages">paket</a>
+            <a href="#services">layanan</a>
+            <a href="#gallery">galeri</a>
+            <a href="#review">review</a>
+            <a href="#contact">kontak</a>
+        </div>
+        <div class="box">
+            <h3>Media Sosial</h3>
+            <ul> <!-- Media Sosial terhubung menu login medsos  -->
+				<li><a href="http://facebook.com">facebook <i class="fab fa-facebook"></i></a></li>
+				<li><a href="http://twitter.com">twitter <i class="fab fa-twitter-square"></i></a></li>
+				<li><a href="http://instagram.com">instagram <i class="fab fa-instagram"></i></a></li>
+			</ul>
+        </div>
+    </div>
+    <h1 class="credit"> created by <span> Elfa Zhanung Gutama </span> | all rights reserved! </h1> <!-- name tag  -->
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<!-- coding javascripts file link  -->
+<script src="script.js"></script>
+</body>
+</html>

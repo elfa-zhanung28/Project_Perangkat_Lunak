@@ -1,0 +1,63 @@
+body{
+	background: #35A9DB;
+	font-family: roboto;
+	text-align: center;
+	background-image: url("mtrx.jfif");
+	background-position: center;
+	background-size: 100%;
+}
+h1,h2{
+	color: #fff;
+}
+.ketengah{
+	margin: 10px auto;
+	width: 1150px;
+}
+.kotak1{
+	box-shadow: 0px 0px 10px 10px #00FFF5;
+	border-radius: 40px 10px;
+	background: #fcfcfc;
+	padding: 20px;
+	float: left;
+	margin: 50px;
+	width: 150px;
+	height: 150px;
+}
+.kotak2{
+	box-shadow: 0px 0px 10px 10px #0FFF00;
+	border-radius: 0px 50px 0px 50px;
+	background: #fcfcfc;
+	padding: 20px;
+	float: left;
+	margin: 50px;
+	width: 150px;
+	height: 150px;
+	matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+	-ms-transform: matrix(1,2,-1,1,5,4); /* Support IE 9 */
+	-webkit-transform: matrix(1,2,-1,1,5,4); /* support Safari */
+	transform: matrix(1,2,-1,1,5,4); /* Standard syntax */
+}
+.kotak3{
+	background-image: url("ktk1.jfif");
+	box-shadow: 0px 0px 10px 10px #00FFF5;
+	border-radius: 40px 10px;
+	padding: 20px;
+	float: left;
+	margin: 50px;
+	width: 150px;
+	height: 150px;
+}
+.kotak4{
+	background-image: url("ktk4.jfif");
+	box-shadow: 0px 0px 10px 10px #0FFF00;
+	border-radius: 0px 50px 0px 50px;
+	padding: 20px;
+	float: left;
+	margin: 50px;
+	width: 150px;
+	height: 150px;
+	matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+	-ms-transform: matrix(1,2,-1,1,5,4); /* Support IE 9 */
+	-webkit-transform: matrix(1,2,-1,1,5,4); /* support Safari */
+	transform: matrix(1,2,-1,1,5,4); /* Standard syntax */
+}

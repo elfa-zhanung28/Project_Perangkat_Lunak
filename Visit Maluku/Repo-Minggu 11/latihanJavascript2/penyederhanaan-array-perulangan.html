@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Alternatif Array dan perulangan</title>
+</head>
+<body>
+    <script>
+        // membuat array
+        var products = ["Bebek Goreng", "Ayam Bakar", "Mie Ayam", "Bakso","Gado-gado"];
+        document.write("<h3>Daftar Menu:</h3>");
+        document.write("<ol>");
+        // menggunakan perulangan untuk mencetak semua isi array
+        products.forEach((data) => {
+            document.write(`<li>${data}</li>`);
+        });
+        document.write("</ol>");
+    </script>
+</body>
+</html>

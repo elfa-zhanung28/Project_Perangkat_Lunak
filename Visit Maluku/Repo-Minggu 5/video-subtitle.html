@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Contoh Subtitle video</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<style>
+		body{
+			background-image: url(bgspg.jpg);
+			background-position: center;
+			background-size: cover;
+			background-attachment: fixed;
+			
+		}
+		body, h1, h2, p, td, span{
+			font-family: Arial, Helvetica, sans-serif;
+			text-decoration: none;
+		}
+		span {
+			color: blue;
+		}
+		.bungkus{
+			background-color:rgba(255,255,255,0.7);
+			background-position: center;
+			width: 800px;
+			color: black;
+			margin: 20px auto;
+			padding: 15px;
+		}
+	</style>
+</head>
+<body>
+	<header class="bungkus" align="center">
+		<h1> " Diam tak akan menyelesaikan masalah, <span>tapi diam juga tak akan menimbulkan masalah." -Patrick Star
+			</span></h1>
+	</header>
+	<h1 align="center">Video Subtitle</h1>
+<div class="bungkus">
+	<video video width="100%" controls>
+		<source src="spongebob.mp4" type="video/mp4"/>
+		<track src="cat-herd-id.vtt" kind="subtitles" srclang="id"
+		label="Indonesia"/>
+	</video>
+</div>	
+
+</body>
+</html>

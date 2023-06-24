@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Belajar Objek Javascript</title>
+    <script>
+        var person = {
+            firstName: "Elfa Zhanung",
+            lastName: "Gutama",
+            showName: function(){
+                //Kata kunci this digunakan untuk mengakses properti dan method dari dalam method (objek).
+                alert(`Nama: ${this.firstName} ${this.lastName}`);
+                //mengacu padaobjek person.
+            }
+        };
+        person.showName();
+    </script>
+</head>
+<body></body>
+</html>

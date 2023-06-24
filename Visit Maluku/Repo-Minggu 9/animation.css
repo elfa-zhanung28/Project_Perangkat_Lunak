@@ -1,0 +1,20 @@
+body{
+	background-image: url("bg10.jfif");
+	background-position: center;
+	background-size: 100%;
+	font-family: roboto;
+}
+h1{
+	width: 550px;
+}
+.kotak{
+	background: blue;
+	width: 200px;
+	height: 200px;
+		animation-name: animasi_kotak;
+animation-duration: 5s;
+}
+@keyframes animasi_kotak{
+	from{ background: cyan;}
+	to{background: red;}
+}
